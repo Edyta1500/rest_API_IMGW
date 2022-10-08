@@ -28,9 +28,6 @@ getAllStation().then(data => {
         document.querySelector('#stacja').appendChild(opt);
 
     });
-});
-
-getAllStation().then(data => {
 
     const selectStation = document.querySelector('#stacja');
 
@@ -67,6 +64,7 @@ getAllStation().then(data => {
         document.querySelector('.option__default').selected = true;
 
     });
+
 }).catch(err => console.log(err));
 
 const clear = document.querySelector('.clear');
@@ -77,7 +75,7 @@ clear.addEventListener('click', () => {
 
     table.innerHTML = '';
 
-})
+});
 
 
 
